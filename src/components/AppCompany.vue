@@ -32,9 +32,11 @@
             </div>
           </div>
           <div class="images"> 
-             <div class="parallax">
+            <div class="wrapper">
+                <div class="parallax">
 
-             </div>
+                </div>
+            </div>
           </div>
         </div>
     </section>
@@ -102,18 +104,25 @@ export default {
 
         div.images{
             width: 50%;
-        }
-            div.parallax {
-            background-image: url("../img/svgs/images/about-4.jpg");
-            background-attachment: scroll;
-            background-repeat: no-repeat;
-            background-size: cover;
-            height: 100%;
-            width: 50%;
-            position: absolute;
-            bottom: 0;
-            }
 
+            div.wrapper{
+                height: 100%;
+                width: 100%;
+                div.parallax {
+                background-image: url("../img/svgs/images/about-4.jpg");
+                background-attachment: scroll;
+                background-repeat: no-repeat;
+                background-size: cover;
+                height: 100%;
+                width: 50%;
+                position: absolute;
+                bottom: 0;
+                }
+            }
+            
+
+        }
+            
         
        
     }
