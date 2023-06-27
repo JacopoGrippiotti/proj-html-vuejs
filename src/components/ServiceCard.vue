@@ -31,6 +31,7 @@ export default {
         width:calc((100% / 3) - 30px);
         padding: 35px;
         margin-top: 40px;
+        border-radius: 0.25rem;
 
        div.images-container{
         display: flex;

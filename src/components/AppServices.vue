@@ -6,7 +6,8 @@
             </h1>
             <div class="description">
                 <p>We are leaders in providing consultancy services with a set of cutting-edge technologies and a team of experienced and renowned professionals. These are some options that you can hire.</p>
-                <button>See All</button>
+                <input type="button"  value="See All">
+                
             </div>
             <div class="cardsContainer">
             <ServiceCard v-for="card in cardList"
@@ -64,7 +65,7 @@ export default {
     div.container{
         width: 100%;
         display: flex;
-        padding: 40px 0px;
+        
         
         div.section-container{
             margin: 0 auto;
@@ -92,12 +93,23 @@ export default {
                         font-weight: 400;
                         color: #606D75;
                     }
+
+                    input{
+                        padding: 10px 25px;
+                        text-transform: uppercase;
+                        font-size: 16px;
+                        background-color: #058283;
+                        border: none;
+                        border-radius: 4px 4px 4px 4px;
+                        color: white;
+                    }
                 }
                 div.cardsContainer{
                 margin: 0 auto;
                 display: flex;
                 justify-content: space-between;
                 flex-wrap: wrap;
+                margin-top: 13px;
                 }
         }
         
