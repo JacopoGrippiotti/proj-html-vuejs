@@ -77,7 +77,6 @@ export default {
         }
         div.container{
         width: 70%;
-        height: 900px;
         background-color: white;
         display: flex;
         justify-content: space-between;

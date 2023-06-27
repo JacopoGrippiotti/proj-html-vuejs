@@ -24,10 +24,23 @@ export default {
     @use '../styles/partials/mixins.scss' as*;
     @use '../styles/partials/variables.scss' as*;
     div.cardProject{
-        width: calc((100% / 3) - 30px );
+        width: calc((100% / 3) - 18px );
+        height: 300px;
+        margin-top: 30px;
+        position: relative;
         
         img{
-            height: 300px;
+            height: 100%;
+            width: 100%;
+            border-radius: 4px 4px 4px 4px;
+        }
+
+        p{
+            position: absolute;
+            color: white;
+            bottom: 30px;
+            font-size: 20px;
+            font-weight: 700;
         }
     }
 </style>
