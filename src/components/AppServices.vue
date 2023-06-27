@@ -1,8 +1,9 @@
 <template>
     <div class="container light-gray">
         <div class="cardsContainer">
-          <ServiceCard 
-          :cardList="cardList" />
+          <ServiceCard v-for="card in cardList"
+          :title="card.title"
+          :icon="card.icon" />
         </div>
     </div>
     
