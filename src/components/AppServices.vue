@@ -75,9 +75,7 @@ export default {
                 h1{
                     margin-bottom: 24px;
                     font-size: 48px;
-                    font-weight: 800
-                    
-                    
+                    font-weight: 800 
                 }
 
                 span{
