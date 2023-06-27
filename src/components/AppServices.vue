@@ -1,10 +1,18 @@
 <template>
     <div class="container light-gray">
-        <div class="cardsContainer">
-          <ServiceCard v-for="card in cardList"
-          :title="card.title"
-          :icon="card.icon" />
+        <div class="section-container">
+            <h1>Excellence in services</h1>
+            <div class="description">
+                <p>We are leaders in providing consultancy services with a set of cutting-edge technologies and a team of experienced and renowned professionals. These are some options that you can hire.</p>
+                <button>See All</button>
+            </div>
+            <div class="cardsContainer">
+            <ServiceCard v-for="card in cardList"
+            :title="card.title"
+            :icon="card.icon" />
         </div>
+        </div>
+        
     </div>
     
 </template>
@@ -52,16 +60,29 @@ export default {
    @use '../styles/partials/mixins.scss' as*;
    @use '../styles/partials/variables.scss' as*;
     div.container{
-        height: 800px;
         width: 100%;
         display: flex;
         padding: 40px 0px;
         
-        div.cardsContainer{
-            width: 70%;
+        div.section-container{
             margin: 0 auto;
-            background-color: blue;
-            
+            width: 70% ;
+                
+                div.description{
+                    display: flex;
+                    justify-content: space-between;
+                    padding-top: 20px;
+                    p{
+                        width: 70%;
+                    }
+                }
+                div.cardsContainer{
+                margin: 0 auto;
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+                }
         }
+        
     }
 </style>
