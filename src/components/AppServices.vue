@@ -16,10 +16,20 @@ export default {
 }
 </script>
 <style lang="scss" scoped>
-@use '../styles/general.scss' as*;
+   @use '../styles/general.scss' as*;
+   @use '../styles/partials/mixins.scss' as*;
+   @use '../styles/partials/variables.scss' as*;
     div.container{
-        height: 1037px;
+        height: 800px;
         width: 100%;
         display: flex;
+        padding: 40px 0px;
+        
+        div.cardsContainer{
+            width: 70%;
+            margin: 0 auto;
+            background-color: blue;
+            
+        }
     }
 </style>
