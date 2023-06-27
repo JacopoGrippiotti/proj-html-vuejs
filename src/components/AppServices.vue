@@ -1,7 +1,9 @@
 <template>
     <div class="container light-gray">
         <div class="section-container">
-            <h1>Excellence in services</h1>
+            <h1>Excellence in 
+                <span>Services</span>
+            </h1>
             <div class="description">
                 <p>We are leaders in providing consultancy services with a set of cutting-edge technologies and a team of experienced and renowned professionals. These are some options that you can hire.</p>
                 <button>See All</button>
@@ -67,13 +69,28 @@ export default {
         div.section-container{
             margin: 0 auto;
             width: 70% ;
+            padding: 100px 0px;
+                
+                h1{
+                    margin-bottom: 24px;
+                    font-size: 48px;
+                    font-weight: 800
+                    
+                    
+                }
+
+                span{
+                    color: #058283;
+                }
                 
                 div.description{
                     display: flex;
                     justify-content: space-between;
-                    padding-top: 20px;
                     p{
                         width: 70%;
+                        font-size: 1rem;
+                        font-weight: 400;
+                        color: #606D75;
                     }
                 }
                 div.cardsContainer{

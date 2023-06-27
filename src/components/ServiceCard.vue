@@ -25,11 +25,18 @@ export default {
 
     div.cardService{
         width:calc((100% / 3) - 30px);
-        padding: 20px 15px;
+        padding: 35px;
         margin-top: 40px;
+
+        h2{
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #21333e;
+        }
         img{
-            height: 30px;
-            width: 30px;
+            height: 45px;
+            width: 45px;
+            filter: brightness(0) saturate(100%) invert(25%) sepia(75%) saturate(2664%) hue-rotate(163deg) brightness(93%) contrast(96%);
         }
     }
 </style>
