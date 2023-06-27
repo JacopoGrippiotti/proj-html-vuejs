@@ -1,7 +1,11 @@
 <template>
     <div class="cardService white-gray">
-        <img :src="getIcon(icon)" alt="">
+        <div class="images-container">
+            <img :src="getIcon(icon)" alt="">
+            <i class="fa-solid fa-arrow-right"></i>
+        </div>
         <h2>{{ title }}</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
     </div>
 </template>
 <script>
@@ -28,11 +32,28 @@ export default {
         padding: 35px;
         margin-top: 40px;
 
+       div.images-container{
+        display: flex;
+        justify-content: space-between;
+        font-size: 1.7rem;
+        color: #058283;
+       }
+
+        p{
+            width: 100%;
+            font-size: 1rem;
+            font-weight: 400;
+            color: #606D75;
+            padding-top: 25px;
+        }
+        
         h2{
             font-size: 1.5rem;
             font-weight: 700;
             color: #21333e;
+            padding-top: 25px;
         }
+        
         img{
             height: 45px;
             width: 45px;
