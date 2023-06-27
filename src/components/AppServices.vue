@@ -70,7 +70,7 @@ export default {
         div.section-container{
             margin: 0 auto;
             width: 70% ;
-            padding: 100px 0px;
+            padding: 80px 0px;
                 
                 h1{
                     margin-bottom: 24px;

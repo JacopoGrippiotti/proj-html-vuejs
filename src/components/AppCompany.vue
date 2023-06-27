@@ -31,8 +31,10 @@
                 
             </div>
           </div>
-          <div class="image"> 
+          <div class="images"> 
+             <div class="parallax">
 
+             </div>
           </div>
         </div>
     </section>
@@ -48,6 +50,8 @@ export default {
 
     section{
         background: linear-gradient(45deg, rgb(13, 27, 42), rgb(34, 72, 100));
+        position: relative;
+        width: 100%;
     }
     div.container{
         display: flex;
@@ -56,7 +60,7 @@ export default {
         margin: 0 auto;
        
         div.description{
-            width: 45%;
+            width: 50%;
             
             h1{
                 font-size: 48px;
@@ -96,9 +100,21 @@ export default {
             }
         }
 
-        div.image{
-            width: 40%;
+        div.images{
+            width: 50%;
         }
+            div.parallax {
+            background-image: url("../img/svgs/images/about-4.jpg");
+            background-attachment: scroll;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 100%;
+            width: 50%;
+            position: absolute;
+            bottom: 0;
+            }
+
+        
        
     }
 </style>
