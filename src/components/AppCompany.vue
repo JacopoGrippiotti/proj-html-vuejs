@@ -112,6 +112,7 @@ export default {
                 background-image: url("../img/svgs/images/about-4.jpg");
                 background-attachment: scroll;
                 background-repeat: no-repeat;
+                
                 background-size: cover;
                 height: 100%;
                 width: 50%;

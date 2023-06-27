@@ -10,7 +10,35 @@ export default {
     name:'AppProjects',
     components:{
         ProjectCard
-    }
+    },
+    data() {
+        return {
+            cardList:
+               {
+                all:[{
+                    title:'all'
+                }],
+                environment:[{
+                    title:'environment'
+                }],
+                institutional:[{
+                    title:'institutional'
+                }],
+                social:[{
+                    title:'social'
+                }],
+                technology:[{
+                    title:'technology'
+                }],
+                innovation:[{
+                    title:'innovation'
+                }],
+                events:[{
+                    title:'events'
+                }],
+            }
+        }
+    },
 }
 </script>
 <style lang="scss" scoped>
