@@ -8,6 +8,8 @@ export default {
     name:'ProjectCard'
 }
 </script>
-<style lang="">
+<style lang="scss" scoped>
+    @use '../styles/general.scss' as*;
+
     
 </style>
