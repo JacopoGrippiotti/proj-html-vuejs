@@ -88,7 +88,7 @@ export default {
                     display: flex;
                     justify-content: space-between;
                     p{
-                        width: 70%;
+                        width: 75%;
                         font-size: 1rem;
                         font-weight: 400;
                         color: #606D75;
