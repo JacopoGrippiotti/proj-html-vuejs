@@ -1,7 +1,8 @@
 <template>
     <div class="container light-gray">
         <div class="cardsContainer">
-          <ServiceCard/>
+          <ServiceCard 
+          :cardList="cardList" />
         </div>
     </div>
     
@@ -12,7 +13,37 @@ export default {
     name:'AppServices',
     components:{
         ServiceCard
-    }
+    },
+    data() {
+        return {
+            cardList:[{
+                title:'Audit & Assurance',
+                icon:'../img/svgs/svg-1.svg'
+            },
+            {
+                title:'Financial Advisory',
+                icon:'../img/svgs/svg-2.svg'
+            },
+            {
+                title:'Analytics and M&A',
+                icon:'../img/svgs/svg-3.svg'
+            },
+            {
+                title:'Middle Marketing',
+                icon:'../img/svgs/svg-4.svg'
+            },
+            {
+                title:'Legal Consulting',
+                icon:'../img/svgs/svg-5.svg'
+            },
+            {
+                title:'Regulatory Risk',
+                icon:'../img/svgs/svg-6.svg'
+            }
+            ]
+        }
+    },
+
 }
 </script>
 <style lang="scss" scoped>
