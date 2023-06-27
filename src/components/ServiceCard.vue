@@ -1,5 +1,5 @@
 <template>
-    <div class="cardService white-gray">
+    <div class="cardService">
         <div class="images-container">
             <img :src="getIcon(icon)" alt="">
             <i class="fa-solid fa-arrow-right"></i>
@@ -32,7 +32,7 @@ export default {
         padding: 35px;
         margin-top: 40px;
         border-radius: 0.25rem;
-
+        background-color: rgb(255, 255, 255);
        div.images-container{
         display: flex;
         justify-content: space-between;

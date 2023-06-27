@@ -4,29 +4,34 @@
           <div class="description">
             <h1>The Company</h1>
             <p>For 12 years  we have been providing audit and warranty, financial advice, taxes and related services to select clients.</p>
-            <div class="cards-container">
-                <div>
-                    <i class="fa-solid fa-hourglass-end"></i>
+            <div class="cards-slider">
+                <div class="card">
+                    <i class="fa-solid fa-award"></i>
                     <span>Tradition</span>
                     <p>Lorem ipsum dolor sit amet consectetur adipiscing elit.</p>
                 </div>
                 
-                <div>
+                <div class="card">
                     <i class="fa-solid fa-lock"></i>
                     <span>Security</span>
                     <p>Lorem ipsum dolor sit amet consectetur adipiscing elit.</p>
                 </div>
                 
-                <div>
-                    <i class="fa-solid fa-apple-whole"></i>
+                <div class="card">
+                    <i class="fa-regular fa-pen-to-square"></i>
                     <span>Certificate</span>
                     <p>Lorem ipsum dolor sit amet consectetur adipiscing elit.</p>
                 </div>
                 
-                <div>
+                <div class="card">
                     <i class="fa-solid fa-user-tie"></i>
                     <span>Expertise</span>
                     <p>Lorem ipsum dolor sit amet consectetur adipiscing elit.</p>
+                </div>
+
+                <div class="buttons-wrapper">
+                    <input  type="button" value="get in touch">
+                    <input  class="black" type="button" value="read more" >
                 </div>
                 
             </div>
@@ -51,7 +56,7 @@ export default {
     @use '../styles/partials/variables.scss' as*;
 
     section{
-        background: linear-gradient(45deg, rgb(13, 27, 42), rgb(34, 72, 100));
+        background-color:rgb(17, 17, 23);
         position: relative;
         width: 100%;
     }
@@ -63,7 +68,7 @@ export default {
        
         div.description{
             width: 50%;
-            
+        
             h1{
                 font-size: 48px;
                 color: white;
@@ -77,13 +82,13 @@ export default {
             padding-top: 25px;
             }
 
-            div.cards-container{
+            div.cards-slider{
                 width: 100%;
                 display: flex;
                 flex-wrap: wrap;
                 padding-top: 20px;
                 
-                    div{
+                    div.card{
                     width: 50%;
                     margin-top: 25px;
 
@@ -98,7 +103,29 @@ export default {
                         font-weight: 700;
                         padding-left: 10px;
                     }
-                }
+                    }
+
+                    div.buttons-wrapper{
+                        width: 100%;
+                        display: flex;
+                        margin-top: 70px;
+                        
+                        input{
+                            padding: 10px 25px;
+                            text-transform: uppercase;
+                            font-size: 16px;
+                            background-color: #058283;
+                            border: 1px solid #058283;
+                            border-radius: 4px 4px 4px 4px;
+                            color: white;
+                            margin-right: 20px;
+                        }
+
+                        input.black{
+                            background-color: black;
+                            border:1px solid #058283;
+                        }
+                    }
             }
         }
 

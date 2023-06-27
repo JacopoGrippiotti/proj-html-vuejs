@@ -1,5 +1,5 @@
 <template>
-    <div class="container light-gray">
+    <div class="container">
         <div class="section-container">
             <h1>Excellence in 
                 <span>Services</span>
@@ -13,7 +13,7 @@
             <ServiceCard v-for="card in cardList"
             :title="card.title"
             :icon="card.icon" />
-        </div>
+            </div>
         </div>
         
     </div>
@@ -65,7 +65,7 @@ export default {
     div.container{
         width: 100%;
         display: flex;
-        
+        background-color:rgb(238, 244, 237);
         
         div.section-container{
             margin: 0 auto;
