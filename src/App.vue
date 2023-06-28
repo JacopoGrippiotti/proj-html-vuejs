@@ -14,6 +14,7 @@
 
 <template>
   <AppMain/>
+  <AppFooter/>
 </template>
 
 <style lang="scss">

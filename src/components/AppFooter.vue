@@ -1,8 +1,35 @@
 <template>
     <section>
         <div class="container">
-        <FooterCard v-for="card in menuList"
-        :title="card.title" :list="card.listItems"/>
+
+          <div class="card">
+            <ul>
+                    <li>
+                        <div class="icon">
+                            <i class="fa-solid fa-phone"></i>
+                        </div>
+                        
+                        <span>+1 (305) 1234-5678</span>
+                    </li>
+                    <li>
+                        <div class="icon">
+                            <i class="fa-solid fa-envelope"></i>
+                        </div>
+                        
+                        <span>hello@example.com</span>
+                    </li>
+                    <li>
+                        <div class="icon">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </div>
+                        
+                        <span>Main Avenue, 987</span>
+                    </li>
+                    
+                </ul>
+          </div>
+          <FooterCard v-for="card in menuList"
+           :title="card.title" :list="card.listItems"/>
         </div>
     </section>
     
@@ -37,4 +64,42 @@ export default {
 <style lang="scss" scoped>
     @use '../styles/partials/mixins.scss' as*;
     @use '../styles/partials/variables.scss' as*;
+
+    section{
+        background-color: rgb(17, 17, 23);
+        padding: 120px 0px;
+        div.container{
+            margin: 0 auto;
+            width: 70%;
+            display: flex;
+            justify-content: space-between;
+
+            div.card{
+                width: calc((100% / 4) - 20px );
+
+                ul{
+                display: flex;
+                flex-direction: column;
+
+                li{
+                    display: flex;
+                    align-items: baseline;
+                    margin-top: 7px;
+                    color: 
+
+                    i{
+                     color: #058283;
+                     margin:  auto;
+                     font-size: 1.2rem;   
+                    }
+                    
+                    span{
+                       color: #058283;
+                       margin-left: 10px;
+                    }
+                }
+            }
+            }
+        }
+    }
 </style>

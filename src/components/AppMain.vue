@@ -13,6 +13,7 @@
  import AppProjects from './AppProjects.vue';
  import AppResults from './AppResults.vue';
  import AppTouch   from './AppTouch.vue';
+ 
 export default {
     name:'AppMain',
     components:{
