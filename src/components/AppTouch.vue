@@ -18,7 +18,36 @@
                 
                 </form>
             </div>
-            <div class="right"></div>
+            <div class="right">
+                <h2>Example Inc.</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <p>Praesent diam lacus, dapibus sed imperdiet consectetur.</p>
+                <ul>
+                    <li>
+                        <div class="icon">
+                            <i class="fa-solid fa-phone"></i>
+                        </div>
+                        
+                        <span>+1 (305) 1234-5678</span>
+                    </li>
+                    <li>
+                        <div class="icon">
+                            <i class="fa-solid fa-envelope"></i>
+                        </div>
+                        
+                        <span>hello@example.com</span>
+                    </li>
+                    <li>
+                        <div class="icon">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </div>
+                        
+                        <span>Main Avenue, 987</span>
+                    </li>
+                    
+                </ul>
+                <input type="button" value="View map">
+            </div>
         </div>
     </section>
 </template>
@@ -28,13 +57,15 @@ export default {
 }
 </script>
 <style lang="scss" scoped>
+    
     section{
-        height: 900px;
+        padding: 120px 0px;
     }
     div.container{
         width: 70%;
         margin: 0 auto;
         display: flex;
+        justify-content: space-between;
 
         div.left{
             width: 65%;
@@ -42,6 +73,7 @@ export default {
             form{
                 display: flex;
                 flex-direction: column;
+                margin-top: 40px;
 
                 div.form-data{
                     display: flex;
@@ -66,20 +98,17 @@ export default {
                     input.button{
                         padding: 10px 10px;
                         text-transform: uppercase;
-                        font-size: 16px;
+                        font-size: 14px;
                         background-color: #058283;
                         border: 1px solid #058283;
                         border-radius: 4px 4px 4px 4px;
                         color: white;
                         text-align: center;
                         width: 10%;
+                        margin-top: 30px;
+                        margin-bottom: 30px;
                     }
-                }
-
-                
-
-                   
-                
+                }  
             }
             h4{
                 font-size: 16px;
@@ -102,12 +131,62 @@ export default {
             p{
                 font-size: 1rem;
                 font-weight: 400;
-                color: #606D75;
+                color: rgb(125, 134, 139);
+                margin-top: 20px;
             }
         }
 
         div.right{
-            width: 35%;
+            width: 32%;
+            ul{
+                display: flex;
+                flex-direction: column;
+
+                li{
+                    display: flex;
+                    align-items: baseline;
+
+                    span{
+                       color: #058283;
+                       margin-left: 10px;
+                    }
+                }
+            }
+
+            input{
+                padding: 10px 10px;
+                text-transform: uppercase;
+                font-size: 14px;
+                background-color: white;
+                border: 1px solid #058283;
+                border-radius: 4px 4px 4px 4px;
+                color: #058283;
+                margin-top: 30px;
+                margin-bottom: 30px;
+            }
+            p{
+                font-size: 1rem;
+                font-weight: 400;
+                color: rgb(125, 134, 139);
+                margin-top: 20px;
+            }
+
+            div.icon{
+                height: 40px;
+                width: 40px;
+                background-color: rgb(219, 236, 237);
+                display: flex;
+                border-radius: 50%;
+                margin-top: 30px;
+
+                i{
+                color: #058283;
+                margin:  auto;
+                font-size: 1.2rem;   
+            }
+            }
+
+            
         }
     }
 </style>
