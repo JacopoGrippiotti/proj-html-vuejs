@@ -9,13 +9,15 @@
  import AppServices from './AppServices.vue';
  import AppCompany from './AppCompany.vue';
  import AppProjects from './AppProjects.vue';
+ import AppResults from './AppResults.vue';
 export default {
     name:'AppMain',
     components:{
         AppJumbotron,
         AppServices,
         AppCompany,
-        AppProjects
+        AppProjects,
+        AppResults
     }
 }
 </script>
