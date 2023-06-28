@@ -3,6 +3,7 @@
     <AppServices/>
     <AppCompany/>
     <AppProjects/>
+    <AppResults/>
 </template>
 <script>
  import AppJumbotron from './AppJumbotron.vue';
