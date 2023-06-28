@@ -102,7 +102,7 @@ export default {
                 }
             }
                     input{
-                        padding: 10px 10px;
+                        padding: 10px;
                         text-transform: uppercase;
                         font-size: 14px;
                         background-color: black;
@@ -111,6 +111,7 @@ export default {
                         color: #058283;
                         margin-top: 30px;
                         margin-bottom: 30px;
+                        width: 50%;
                     }
             }
         }
