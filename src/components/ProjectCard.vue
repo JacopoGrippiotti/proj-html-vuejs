@@ -24,7 +24,7 @@ export default {
     @use '../styles/partials/mixins.scss' as*;
     @use '../styles/partials/variables.scss' as*;
     div.cardProject{
-        width: calc((100% / 3) - 18px );
+        width: calc((100% / 3) - 23px );
         height: 300px;
         margin-top: 30px;
         position: relative;
@@ -32,7 +32,7 @@ export default {
         img{
             height: 100%;
             width: 100%;
-            border-radius: 4px 4px 4px 4px;
+            border-radius: 6px 6px 6px 6px;
         }
 
         p{
