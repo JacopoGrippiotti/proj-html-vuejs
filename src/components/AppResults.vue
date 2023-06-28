@@ -53,7 +53,7 @@
 </template>
 <script>
 export default {
-    
+    name:'AppResults'
 }
 </script>
 <style lang="scss" scoped>
@@ -122,23 +122,23 @@ export default {
 
         div.program-languages{
             
-            background-color: black;
+            background-color: rgb(17, 17, 23);
             width:100%;
             display: flex;
             align-items: center;
             div.languages-container{
-                width: 60%;
+                width: 65%;
                 margin: 0 auto;
                 
                 ul{
                     display: flex;
                     justify-content: space-between;
                     align-items: center;
-                    padding: 50px 0px;
+                    padding: 100px 0px;
 
                     
                     img{
-                        width: 80px;
+                        width: 70px;
                         filter: brightness(3);
                     }
                 }
