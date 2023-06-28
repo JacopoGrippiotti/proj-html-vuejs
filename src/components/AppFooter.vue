@@ -26,7 +26,8 @@
                         <span>Main Avenue, 987</span>
                     </li>
                     
-                </ul>
+                    <input type="button" value="get in touch">
+            </ul>
           </div>
           <FooterCard v-for="card in menuList"
            :title="card.title" :list="card.listItems"/>
@@ -88,7 +89,7 @@ export default {
                     
 
                     i{
-                     color: #058283;
+                     color: rgb(174, 175, 182);
                      font-size: 1.2rem;   
                     }
                     
@@ -96,8 +97,21 @@ export default {
                         color: rgb(174, 175, 182);
                         margin-left: 10px;
                     }
+
+                    
                 }
             }
+                    input{
+                        padding: 10px 10px;
+                        text-transform: uppercase;
+                        font-size: 14px;
+                        background-color: black;
+                        border: 1px solid #058283;
+                        border-radius: 4px 4px 4px 4px;
+                        color: #058283;
+                        margin-top: 30px;
+                        margin-bottom: 30px;
+                    }
             }
         }
     }
