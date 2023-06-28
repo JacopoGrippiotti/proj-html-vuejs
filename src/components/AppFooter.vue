@@ -85,17 +85,16 @@ export default {
                     display: flex;
                     align-items: baseline;
                     margin-top: 7px;
-                    color: 
+                    
 
                     i{
                      color: #058283;
-                     margin:  auto;
                      font-size: 1.2rem;   
                     }
                     
                     span{
-                       color: #058283;
-                       margin-left: 10px;
+                        color: rgb(174, 175, 182);
+                        margin-left: 10px;
                     }
                 }
             }
