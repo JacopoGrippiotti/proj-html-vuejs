@@ -1,5 +1,5 @@
 <template>
-    <section>
+    <footer>
         <div class="container">
 
           <div class="card">
@@ -31,7 +31,7 @@
           <FooterCard v-for="card in menuList"
            :title="card.title" :list="card.listItems"/>
         </div>
-    </section>
+    </footer>
     
 </template>
 <script>
@@ -65,7 +65,7 @@ export default {
     @use '../styles/partials/mixins.scss' as*;
     @use '../styles/partials/variables.scss' as*;
 
-    section{
+    footer{
         background-color: rgb(17, 17, 23);
         padding: 120px 0px;
         div.container{
