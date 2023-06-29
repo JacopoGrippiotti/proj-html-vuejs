@@ -1,7 +1,11 @@
 <template>
-    <section class="jumbotron" :class="takeBackground">
+    <section class="jumbotron" :class="slideList[activeIndex].background">
         <AppSlider
-        :slideList="slideList"/>
+        :slideList="slideList"
+        :activeIndex="activeIndex"
+        @preSlide="preSlide"
+        @centerSlide="centerSlide"
+        @rightSlide="rightSlide"/>
     </section>
 </template>
 <script>
@@ -32,12 +36,44 @@ export default {
                     description:"Do not miss the opportunity to achieve better results and solidity in the market",
                     background:"background-right"
                 }
-            ]
+            ],
+            activeIndex:1
         }
     },
     methods:{
-        takeBackground(className){
-            return className
+        preSlide(){
+            if(this.activeIndex === 0){
+                return false
+            }
+
+            if(this.activeIndex === 1){
+                this.activeIndex = this.activeIndex - 1
+            }
+            if(this.activeIndex === 2){
+                this.activeIndex = this.activeIndex - 2
+            }
+            
+            
+        },
+        centerSlide(){
+            if(this.activeIndex === 1){
+                return false
+            }
+
+            if(this.activeIndex === 0){
+                this.activeIndex = this.activeIndex + 1
+            }
+            
+            if(this.activeIndex === 2){
+                this.activeIndex = this.activeIndex - 1
+            }
+            
+        },
+        rightSlide(){
+            if(this.activeIndex === 2){
+                return false
+            }
+            this.activeIndex = this.activeIndex + 1
         }
     }
 }
@@ -50,7 +86,8 @@ export default {
         height: 1000px;
         background-image: url('../img/svgs/images/bg-parallax.png');
         display: flex;
-        background-position-x:center ;
+        transition: background-position-x 1.2s ease-in-out;
+        position: relative;
     }
 
     .background-center{
@@ -58,7 +95,11 @@ export default {
     }
 
     .background-right{
-        background-position: right;
+        background-position-x: right;
+    }
+
+    .background-left{
+        background-position-x: left;
     }
     
 </style>

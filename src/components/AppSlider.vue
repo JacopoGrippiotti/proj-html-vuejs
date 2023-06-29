@@ -5,18 +5,23 @@
         </h1>
         <p>{{ slideList[activeIndex].description }}</p>
         <input type="button" value="Get in Touch">
-        
+        <div class="inputs">
+            <input type="button" @click="$emit('preSlide')">
+            <input type="button" @click="$emit('centerSlide')">
+            <input type="button" @click="$emit('rightSlide')">
+        </div>
     </div>
 </template>
 <script>
 export default {
     name:'AppSlider',
     props:{
-        slideList:Array
+        slideList:Array,
+        activeIndex:Number
     },
     data() {
         return {
-            activeIndex:1
+            
         }
     },
 }
@@ -26,6 +31,21 @@ export default {
         width: 30%;
         margin: auto;
         text-align: center;
+        
+
+        div.inputs{
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+            right: 30px;
+            bottom: 50%;
+            transform: translateY(50%);
+
+            input{
+                padding: 5px;
+                margin-top: 10px;
+            }
+        }
 
         h1{
             font-size: 72px;
