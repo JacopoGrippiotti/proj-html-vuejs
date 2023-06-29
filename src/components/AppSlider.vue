@@ -52,7 +52,10 @@ export default {
             color: white;
             text-align: center;
             margin-top: 30px;
-            margin-bottom: 30
+            margin-bottom: 30;
+            &:hover{
+                cursor: pointer;
+            }
         }
     }
 </style>

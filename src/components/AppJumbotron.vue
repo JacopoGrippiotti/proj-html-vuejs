@@ -1,5 +1,5 @@
 <template>
-    <section class="jumbotron">
+    <section class="jumbotron" :class="takeBackground">
         <AppSlider
         :slideList="slideList"/>
     </section>
@@ -17,21 +17,29 @@ export default {
                 {
                     title:"We Share",
                     span:"Good Ideas",
-                    description:"Escape the comfort zone and achieve better results with the help of experts who understand the subject"
+                    description:"Escape the comfort zone and achieve better results with the help of experts who understand the subject",
+                    background:"background-left"
                 },
                 {
                     title:"Ready",
                     span:"Team",
-                    description:"No matter what your company needs, we will be ready to assist you in the best possible way."
+                    description:"No matter what your company needs, we will be ready to assist you in the best possible way.",
+                    background:"background-center"
                 },
                 {
                     title:"Talk to a",
                     span:"Consultant",
-                    description:"Do not miss the opportunity to achieve better results and solidity in the market"
+                    description:"Do not miss the opportunity to achieve better results and solidity in the market",
+                    background:"background-right"
                 }
             ]
         }
     },
+    methods:{
+        takeBackground(className){
+            return className
+        }
+    }
 }
 </script>
 <style lang="scss" scoped>
